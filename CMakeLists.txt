@@ -16,10 +16,6 @@ juce_add_console_app(test_console)
 
 target_sources(test_console PRIVATE src/main.cpp)
 
-target_compile_definitions(test_console PRIVATE
-    JUCE_WEB_BROWSER=0
-    JUCE_USE_CURL=0)
-
 target_link_libraries(test_console
     PRIVATE
         juce::juce_core
